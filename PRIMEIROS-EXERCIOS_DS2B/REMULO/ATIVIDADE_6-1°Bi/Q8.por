@@ -1,0 +1,19 @@
+programa {
+  funcao inicio() {
+    real n1,n2,n3,media
+
+    escreva("Digite a primeira nota: ")
+    leia(n1)
+
+    escreva("Digite a segunda nota: ")
+    leia(n2)
+
+    escreva("Digite a terciera nota: ")
+    leia(n3)
+
+    media = (n1 + n2 + n3) / 3
+
+    escreva("Media final: ")
+    escreva(media)
+  }
+}
