@@ -4,18 +4,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url("18568\ ST.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   background-color: rgba(194, 41, 41, 0.665);
+
 }
 
 .navbar
 {
-    background-color:black
-    color#ffffff;
+    background-color:rgb(0, 0, 0);
+    color: #fbf9f9;
     display:flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 5%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3)
+    box-shadow: 0 20px 50px rgba(202, 25, 25, 0.916);
+}
+
+.logo
+{
+    width: 400px;
+    height: 175px;
+    
 }
 
 .navbar ul {
@@ -26,7 +41,7 @@
 }
 
 .navbar ul li a{
-    color: aqua;
+    color: rgb(143, 22, 22);
     text-decoration: none;
     padding: 10px 20px;
     display: block;
@@ -35,8 +50,8 @@
 }
 
 .navbar ul li a:hover{
-    background-color: white;
-    color: #2c3e50;
+    background-color: rgb(24, 18, 53);
+    color: #0f02c3;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
     transform: translateY(-2px);
     
@@ -49,7 +64,7 @@
     height: 400px;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 20px rgba(151, 50, 50, 0.867);
 
 
 }
@@ -106,14 +121,68 @@
 
 
 }
+
+    #radio1:checked ~ .nav-manual .manual-btn:nth-child(1),
+    #radio2:checked ~ .nav-manual .manual-btn:nth-child(2),
+     #radio3:checked ~ .nav-manual .manual-btn:nth-child(3),
+    #radio4:checked ~ .nav-manual .manual-btn:nth-child(4){
+        background-color: #a855f7;
+         border-color: #a855f7;
+         width: 30px;
+         border-radius: 10px;
+
+         @keyframes piscaElemento {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; } /* Ajuste a opacidade para não sumir totalmente */
+  100% { opacity: 1; }
+}
+
+.elemento-piscante {
+  animation: piscaElemento 0.5s infinite;
+}
+}
+
 .manual-btn:hover{
     background-color: rebeccapurple;
 }
 
 .rodape-principal {
-    background-color: #2c3e50;
-    color:white
+    background-color: #fdfeff;
+    color:white;
     padding: 40px 0 20px 0;
     margin-top: 50px;
  }
+ .container-rodape{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+ .links-sociais a 
+ {
+    color:white;
+    text-decoration: none;
+    margin:0 15px;
+    font-weight:bold;
+    transition: 0.3s;
 
+ }
+ .links-sociais a:hover{
+    color:#3498db;
+    text-shadow:0 0 5px(255,255,255,0.2);
+ }
+ .rodape-inferior{
+    text-align: center;
+    border-top: 1px solid rgba (255,255,255,0.1);
+    margin-top:30px;
+    padding-top: 20px;
+    font-size: 12px;
+    opacity: 0.6;
+
+ 
+ }
+ p{
+   text-shadow: 2px 2px 5px black; 
+ }
